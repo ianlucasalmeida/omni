@@ -1,0 +1,14 @@
+# Arquivos de Upload do Usuário
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Configurações de IDEs
+.vscode/
+.idea/
+
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
