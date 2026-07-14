@@ -5,7 +5,7 @@ $v = $_GET['v'] ?? 'home';
 $logado = $_SESSION['autenticado'] ?? false;
 
 // Inclusão da rota orchestration e users no array de segurança
-$rotas_protegidas = ['dashboard', 'finance', 'storage', 'customers', 'products', 'orchestration', 'workflow', 'users'];
+$rotas_protegidas = ['dashboard', 'finance', 'storage', 'customers', 'products', 'orchestration', 'workflow', 'users', 'projects', 'infra', 'terminal'];
 if (in_array($v, $rotas_protegidas) && !$logado) { 
     header('Location: index.php?v=login'); 
     exit; 

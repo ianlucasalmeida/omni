@@ -11,7 +11,7 @@ if (isset($_SESSION['autenticado']) && $_SESSION['autenticado']) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $page_title ?? 'Omniware ERP - A Gestão Completa para seu Negócio'; ?></title>
+  <title><?php echo $page_title ?? 'Omni ERP - A Gestão Completa para seu Negócio'; ?></title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -32,7 +32,7 @@ if (isset($_SESSION['autenticado']) && $_SESSION['autenticado']) {
   <header class="bg-white shadow-sm sticky top-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
       <a href="index.php?v=home" class="flex items-center">
-        <div class="w-10 h-10 bg-php-purple rounded-lg flex items-center justify-center font-bold text-xl text-white mr-3">O</div>
+        <img src="logo/logo.png" alt="Logo Omni" class="w-10 h-10 object-contain mr-3">
         <span class="text-2xl font-bold text-gray-800">Omni ERP</span>
       </a>
       <div class="flex items-center space-x-8">
@@ -69,13 +69,14 @@ if (isset($_SESSION['autenticado']) && $_SESSION['autenticado']) {
       <div class="xl:grid xl:grid-cols-4 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
           <a href="index.php?v=home" class="flex items-center">
-            <div class="w-10 h-10 bg-php-purple rounded-lg flex items-center justify-center font-bold text-xl mr-3">O</div>
+            <img src="logo/logo.png" alt="Logo Omni" class="w-10 h-10 object-contain mr-3">
             <span class="text-2xl font-bold">Omni ERP</span>
           </a>
           <p class="text-gray-400 text-base">
             Simplificando a gestão de negócios com tecnologia intuitiva.
           </p>
         </div>
+        
         <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-8 xl:mt-0 xl:col-span-3">
           <div>
             <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Soluções</h3>
@@ -89,7 +90,7 @@ if (isset($_SESSION['autenticado']) && $_SESSION['autenticado']) {
             <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Empresa</h3>
             <ul class="mt-4 space-y-4">
               <li><a href="index.php?v=sobre" class="text-base text-gray-400 hover:text-white">Sobre Nós</a></li>
-              <li><a href="index.php?v=home" class="text-base text-gray-400 hover:text-white">Contato</a></li>
+              <li><a href="index.php?v=contato" class="text-base text-gray-400 hover:text-white">Contato</a></li>
               <li><a href="#" class="text-base text-gray-400 hover:text-white cursor-not-allowed">Carreiras</a></li>
             </ul>
           </div>
@@ -102,14 +103,11 @@ if (isset($_SESSION['autenticado']) && $_SESSION['autenticado']) {
           </div>
         </div>
       </div>
-      <div>
-        <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Empresa</h3>
-        <ul class="mt-4 space-y-4">
-          <li><a href="index.php?v=sobre" class="text-base text-gray-400 hover:text-white">Sobre Nós</a></li>
-          <li><a href="index.php?v=contato" class="text-base text-gray-400 hover:text-white">Contato</a></li>
-          <li><a href="#" class="text-base text-gray-400 hover:text-white cursor-not-allowed">Carreiras</a></li>
-        </ul>
+      
+      <div class="mt-12 border-t border-gray-700 pt-8">
+        <p class="text-base text-gray-400 text-center">&copy; <?php echo date('Y'); ?> Omni ERP. Todos os direitos reservados.</p>
       </div>
+      
     </div>
   </footer>
 </body>

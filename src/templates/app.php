@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Omniware ERP</title>
+    <title>Omni ERP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,8 +31,8 @@
 
     <aside class="w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 flex flex-col z-20 shadow-sm">
         <div class="h-16 flex items-center px-6 border-b border-gray-200 dark:border-gray-700">
-            <div class="w-8 h-8 bg-php-purple rounded flex items-center justify-center font-bold text-white mr-3">O</div>
-            <span class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">OMNIWARE</span>
+            <img src="logo/logo.png" alt="Logo Omni" class="w-8 h-8 object-contain mr-3 dark:invert-0 transition-all duration-200">
+            <span class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">OMNI</span>
         </div>
 
         <nav class="flex-grow py-4 px-3 space-y-1 overflow-y-auto">
@@ -55,12 +55,25 @@
                 </div>
             </div>
 
+            <a href="index.php?v=terminal" class="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white font-medium flex justify-between items-center group">
+                <span>Terminal Core</span>
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse group-hover:scale-125 transition-transform"></span>
+            </a>
+
+            <a href="index.php?v=infra" class="flex items-center px-3 py-2.5 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg font-medium transition-colors">
+                <span>Máquinas Virtuais (EC2)</span>
+            </a>
+
             <a href="index.php?v=customers" class="flex items-center px-3 py-2.5 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg font-medium transition-colors">
                 <span>Clientes</span>
             </a>
 
             <a href="index.php?v=products" class="flex items-center px-3 py-2.5 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg font-medium transition-colors">
                 <span>Estoque</span>
+            </a>
+
+            <a href="index.php?v=projects" class="flex items-center px-3 py-2.5 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg font-medium transition-colors">
+                <span>Projetos & Portfólio</span>
             </a>
 
             <a href="index.php?v=users" class="flex items-center px-3 py-2.5 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700/50 rounded-lg font-medium transition-colors">
